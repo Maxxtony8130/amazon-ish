@@ -44,7 +44,7 @@ function Orders() {
           <div className="payment__summary">
             <h5>Order ID: {order.created}</h5>
             <p>
-              Payment Method: {order.type === "cod" && "Cash on Delivery"}
+              Payment Method: {order.type === "cod" && "COD"}
               {order.type === "card" && "Card"}
             </p>
             <div className="payment__summaryList">
