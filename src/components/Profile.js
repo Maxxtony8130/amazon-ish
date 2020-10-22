@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import { useHistory } from "react-router-dom";
 import db, { auth } from "../firebase";
@@ -7,6 +7,7 @@ import { useStateValue } from "../StateProvider";
 function Profile() {
   const history = useHistory();
   const [{ user, loadingBar }] = useStateValue();
+  const [userDetails, setUserDetails] = useState(null);
 
   useEffect(() => {
     if (loadingBar) {
@@ -17,7 +18,8 @@ function Profile() {
         db.collection("users")
           .doc(user.uid)
           .get()
-          .then(() => {
+          .then((response) => {
+            setUserDetails(response.data());
             if (loadingBar) {
               loadingBar.current.complete();
             }
@@ -54,14 +56,43 @@ function Profile() {
           </p>
         </span>
         <div className="buttons" style={{ marginLeft: "auto" }}>
-          <button className="button buttonPrimary" onClick={signOut}>
+          <button className="buttonRed" onClick={signOut}>
             Sign Out
           </button>
         </div>
       </div>
-      <div className="profile__inner">
-        <p> Display Name: {user?.displayName}</p>
-      </div>
+      {userDetails && (
+        <div className="profile__inner">
+          <p style={{ marginBottom: "1rem" }}>
+            <span>Name</span>
+            <span>{userDetails.name}</span>
+          </p>
+          <p>
+            <span>Email Address</span>
+            <span>{userDetails.email}</span>
+          </p>
+          <p style={{ marginBottom: "1rem" }}>
+            <span>Phone</span>
+            <span>{userDetails.phone}</span>
+          </p>
+          <p style={{ marginBottom: "1rem" }}>
+            <span>Date of Birth</span>
+            <span>{userDetails.email}</span>
+          </p>
+          <p>
+            <span>Address</span>
+            <span style={{ maxWidth: "400px" }}>{`${userDetails.address}, ${userDetails.state}`}</span>
+          </p>
+          <p>
+            <span>Country</span>
+            <span>{userDetails.country}</span>
+          </p>
+          <p>
+            <span>Zip Code</span>
+            <span>{userDetails.postal_code}</span>
+          </p>
+        </div>
+      )}
     </div>
   );
 }

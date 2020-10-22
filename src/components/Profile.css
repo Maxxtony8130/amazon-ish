@@ -16,5 +16,21 @@
   margin-top: 4rem;
 }
 .profile__inner {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(26, 26, 44, 0.05);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.profile__inner p {
+  margin: 0;
+  padding: 1rem 0;
   display: flex;
+}
+.profile__inner p span:first-child {
+  flex: 20%;
+  min-width: 100px;
+}
+.profile__inner p span:nth-child(2) {
+  flex: 80%;
 }
