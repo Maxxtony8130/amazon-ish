@@ -1,20 +1,22 @@
-import React from "react";
-import { Redirect } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import { useQuery } from "../util";
 
 function Auth() {
   const query = useQuery();
+  const history = useHistory();
 
-  let path;
-  if (query.get("mode") === "resetPassword") {
-    path = `/password-reset?mode=resetPassword&code=${query.get("oobCode")}`;
-  } else if (query.get("mode") === "verifyEmail") {
-    path = `/login?code=${query.get("oobCode")}`;
-  } else {
-    path = "/";
-  }
+  useEffect(() => {
+    if (query.get("mode") === "resetPassword") {
+      history.replace(`/password-reset?mode=resetPassword&code=${query.get("oobCode")}`);
+    } else if (query.get("mode") === "verifyEmail") {
+      history.replace(`/login?code=${query.get("oobCode")}`);
+    } else {
+      history.replace("/");
+    }
+  }, []);
 
-  return <Redirect to={path} />;
+  return null;
 }
 
 export default Auth;
