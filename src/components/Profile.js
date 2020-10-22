@@ -37,6 +37,7 @@ function Profile() {
   const signOut = () => {
     loadingBar.current.continuousStart();
     auth.signOut().then(() => {
+      setUserDetails(null);
       setTimeout(() => {
         loadingBar.current.complete();
         history.push("/");
