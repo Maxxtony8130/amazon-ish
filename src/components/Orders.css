@@ -21,4 +21,5 @@
 .orders .payment__summaryList {
   display: flex;
   flex-flow: column nowrap;
+  height: calc(100% - 1.5rem);
 }
