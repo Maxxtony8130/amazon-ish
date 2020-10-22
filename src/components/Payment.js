@@ -36,6 +36,9 @@ function Payment() {
     if (e.target.checked) {
       setMethod(e.target.value);
     }
+    if (e.target.checked && e.target.value === 'cod') {
+      setError(null);
+    }
   };
 
   useEffect(() => {
