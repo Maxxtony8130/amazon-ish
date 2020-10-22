@@ -17,9 +17,11 @@
   margin: 1rem;
   max-width: auto;
   align-self: stretch;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .orders .payment__summaryList {
   display: flex;
   flex-flow: column nowrap;
-  height: calc(100% - 1.5rem);
+  align-self: stretch;
 }
