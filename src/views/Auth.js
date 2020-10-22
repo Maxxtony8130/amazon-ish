@@ -17,7 +17,7 @@ function Auth() {
         history.replace("/");
       }
       unsubscribe();
-    }
+    });
   }, []);
 
   return null;
