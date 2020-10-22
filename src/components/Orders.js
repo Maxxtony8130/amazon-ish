@@ -58,9 +58,9 @@ function Orders() {
                   </span>
                 </div>
               ))}
-              <div style={{ marginTop: "1.5rem" }}></div>
+              <div style={{ marginBottom: "1.5rem" }}></div>
               <div
-                style={{ marginTop: "auto", alignSelf: "flex-end" }}
+                style={{ marginTop: "auto" }}
                 className="payment__item"
               >
                 <span className="payment__name">Amount</span>

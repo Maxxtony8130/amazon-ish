@@ -17,6 +17,8 @@
   margin: 1rem;
   max-width: auto;
   align-self: stretch;
+}
+.orders .payment__summaryList {
   display: flex;
   flex-flow: column nowrap;
 }
