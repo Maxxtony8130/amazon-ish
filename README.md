@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to Amazon-ish 👋</h1>
+# Welcome to Amazon-ish 👋
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -7,8 +7,6 @@
 </p>
 
 > Amazon redesign with a modern UI, complete E-Commerce functionality including Payment Processing (Stripe API) and User Authentication (Firebase).
-
-### 🏠 [Homepage](https://amazon-ish.vercel.app)
 
 ### ✨ [Demo](https://amazon-ish.vercel.app)
 
@@ -24,12 +22,6 @@ npm install
 npm run build
 ```
 
-## Run tests
-
-```sh
-yarn run test
-```
-
 ## Author
 
 👤 **Dash Santosh**
@@ -41,5 +33,3 @@ yarn run test
 
 Give a ⭐️ if this project helped you!
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
