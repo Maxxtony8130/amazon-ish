@@ -22,7 +22,7 @@ function Login() {
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    const code = query.get("code");
+    const code = query.get("oobCode");
     const verifyCode = async (actionCode) => {
       auth
         .applyActionCode(actionCode)

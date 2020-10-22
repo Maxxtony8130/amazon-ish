@@ -49,7 +49,7 @@ function PasswordReset() {
 
   const resetPassword = (newPassword) => {
     auth
-      .confirmPasswordReset(query.get("code"), newPassword)
+      .confirmPasswordReset(query.get("oobCode"), newPassword)
       .then((response) => {
         console.log(response);
         setEmail("");

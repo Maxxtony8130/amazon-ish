@@ -1,26 +1,25 @@
-import React, { useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
 import { useQuery } from "../util";
-import { auth } from "../firebase";
+import Login from "../components/Login";
+import PasswordReset from "../components/PasswordReset";
+import { motion } from "framer-motion";
+import { pageTransition, pageSlide } from "../util";
 
 function Auth() {
   const query = useQuery();
-  const history = useHistory();
 
-  useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (query.get("mode") === "resetPassword") {
-        history.replace(`/password-reset?mode=resetPassword&code=${query.get("oobCode")}`);
-      } else if (query.get("mode") === "verifyEmail") {
-        history.replace(`/login?code=${query.get("oobCode")}`);
-      } else {
-        history.replace("/");
-      }
-      unsubscribe();
-    });
-  }, []);
-
-  return null;
+  return (
+    <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageSlide}
+      transition={pageTransition}
+    >
+      {query.get("mode") === "verifyEmail" && <Login />}
+      {query.get("mode") === "resetPassword" && <PasswordReset />}
+    </motion.div>
+  );
 }
 
 export default Auth;
