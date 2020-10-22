@@ -5,6 +5,7 @@ import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
 import ShoppingCartRoundedIcon from "@material-ui/icons/ShoppingCartRounded";
 import BookmarksRoundedIcon from "@material-ui/icons/BookmarksRounded";
 import WatchLaterRoundedIcon from "@material-ui/icons/WatchLaterRounded";
+import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 import { NavLink, useHistory } from "react-router-dom";
 import defaultImage from "../assets/default.jpg";
 import ReactTooltip from "react-tooltip";
@@ -22,14 +23,6 @@ const iconStyle = (fontsize) => {
 function Sidebar() {
   const history = useHistory();
   const [{ user, cart, bookmarks }] = useStateValue();
-
-  const handleClick = () => {
-    if (user) {
-      history.push("/profile");
-    } else {
-      history.push("/login");
-    }
-  };
 
   return (
     <div className="sidebar">
@@ -87,13 +80,28 @@ function Sidebar() {
           />
         </NavLink>
       </div>
-      <img
-        src={user?.photoURL || defaultImage}
-        onClick={handleClick}
-        data-tip={user ? "Profile" : "Login / Register"}
-        data-for="sidebarTooltip"
-        className="sidebar__avatar"
-      />
+      {user ? 
+        <img
+          src={user?.photoURL || defaultImage}
+          onClick={() => history.push("/profile")}
+          data-tip="My Account"
+          data-for="sidebarTooltip"
+          className="sidebar__avatar"
+        />
+      :
+        <NavLink
+          to="/login"
+          className="sidebar__menuItem"
+          activeClassName="active"
+          data-tip="Login / Register"
+          data-for="sidebarTooltip"
+        >
+          <AccountCircleRoundedIcon
+            className="sidebar__menuIcon"
+            style={iconStyle(32)}
+          />
+        </NavLink>
+      }
       <ReactTooltip
         place="right"
         className="app__toolTip"
