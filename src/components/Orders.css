@@ -23,5 +23,5 @@
 .orders .payment__summaryList {
   display: flex;
   flex-flow: column nowrap;
-  align-self: stretch;
+  flex: 1;
 }
