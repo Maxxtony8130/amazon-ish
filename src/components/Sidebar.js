@@ -98,7 +98,7 @@ function Sidebar() {
         >
           <AccountCircleRoundedIcon
             className="sidebar__menuIcon"
-            style={iconStyle(32)}
+            style={iconStyle(36)}
           />
         </NavLink>
       }
