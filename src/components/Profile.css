@@ -24,12 +24,13 @@
 }
 .profile__inner p {
   margin: 0;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   display: flex;
 }
 .profile__inner p span:first-child {
   flex: 20%;
   min-width: 100px;
+  font-weight: 500;
 }
 .profile__inner p span:nth-child(2) {
   flex: 80%;

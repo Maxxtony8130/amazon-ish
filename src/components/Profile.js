@@ -56,7 +56,7 @@ function Profile() {
           </p>
         </span>
         <div className="buttons" style={{ marginLeft: "auto" }}>
-          <button className="buttonRed" onClick={signOut}>
+          <button className="buttonRed" onClick={signOut} style={{ padding: "1rem 1.5rem" }}>
             Sign Out
           </button>
         </div>
@@ -81,7 +81,7 @@ function Profile() {
           </p>
           <p>
             <span>Address</span>
-            <span style={{ maxWidth: "400px" }}>{`${userDetails.address}, ${userDetails.state}`}</span>
+            <span style={{ maxWidth: "400px", marginRight: "auto" }}>{`${userDetails.address}, ${userDetails.state}`}</span>
           </p>
           <p>
             <span>Country</span>
