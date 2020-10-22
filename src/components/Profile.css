@@ -28,7 +28,7 @@
   display: flex;
 }
 .profile__inner p span:first-child {
-  flex: 20%;
+  flex: 0 0 20%;
   margin-right: 2rem;
   max-width: 200px;
   font-weight: 700;
