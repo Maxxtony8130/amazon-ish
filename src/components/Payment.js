@@ -77,6 +77,9 @@ function Payment() {
           .then((response) => {
             setClientSecret(response.data.clientSecret);
             setOrderId(response.data.id);
+          }).catch((error) => {
+            setError('Some error occurred. Try again later.');
+            setOrderId('Error');
           });
       });
     }
