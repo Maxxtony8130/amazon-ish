@@ -29,8 +29,9 @@
 }
 .profile__inner p span:first-child {
   flex: 20%;
-  min-width: 100px;
-  font-weight: 500;
+  margin-right: 2rem;
+  max-width: 200px;
+  font-weight: 700;
 }
 .profile__inner p span:nth-child(2) {
   flex: 80%;

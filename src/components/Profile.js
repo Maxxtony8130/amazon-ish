@@ -81,7 +81,7 @@ function Profile() {
           </p>
           <p>
             <span>Address</span>
-            <span style={{ maxWidth: "400px", marginRight: "auto" }}>{`${userDetails.address}, ${userDetails.state}`}</span>
+            <span style={{ maxWidth: "400px" }}>{`${userDetails.address}, ${userDetails.state}`}</span>
           </p>
           <p>
             <span>Country</span>
