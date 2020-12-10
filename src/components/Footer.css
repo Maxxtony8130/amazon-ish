@@ -77,6 +77,8 @@
 }
 .footer__dropDownSpan {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 .footer__currDropDown {
   margin-right: 0;
@@ -100,6 +102,12 @@
   }
   .footer__disclaimer {
     padding: 1.5rem;
+  }
+  .footer__copy {
+    padding: 1.5rem;
+  }
+  .footer__dropDownSpan {
+    margin: 0;
   }
   .footer__bottom {
     padding: 1.5rem;
