@@ -81,6 +81,7 @@ function Footer() {
             &copy; 2020 | Developed by{" "}
             <a href="https://dashsantosh.ga">Dash Santosh</a>
           </span>
+          <span className="footer__dropDownSpan">
           <DropDown
             className="footer__dropDown footer__langDropDown"
             items={languages}
@@ -91,6 +92,7 @@ function Footer() {
             items={currency}
             defaultItem={currency[0]}
           />
+        </span>
         </div>
       </div>
     </div>

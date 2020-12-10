@@ -75,7 +75,7 @@
   color: #dc143c;
   border-bottom: 1px dotted #dc143c;
 }
-.footer__langDropDown {
+.footer__dropDownSpan {
   margin-left: auto;
 }
 .footer__currDropDown {
@@ -105,5 +105,9 @@
     padding: 1.5rem;
     flex-flow: column nowrap;
     justify-content: center;
+  }
+  .footer__langDropDown,
+  .footer__currDropDown {
+    margin: 1rem auto;
   }
 }
