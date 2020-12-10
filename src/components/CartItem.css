@@ -38,10 +38,10 @@
   display: flex;
   margin-top: auto;
   align-items: baseline;
-  justify-content: space-between;
 }
 .cartItem__price {
   margin: 0;
+  width: fit-content;
 }
 .cartItem__price del {
   color: #dc143c;
@@ -70,6 +70,9 @@
 @media (max-width: 550px) {
   .cartItem__image img {
     padding: 0.75rem;
+  }
+  .cartItem__price del {
+    display: block;
   }
   .cartItem__details {
     padding: 0.75rem 0.75rem 0.75rem 0;
