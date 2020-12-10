@@ -65,3 +65,12 @@
   font-size: 0.85rem;
   transition: all 0.2s;
 }
+
+@media (max-width: 550px) {
+  .cartItem__image img {
+    padding: 0.5rem;
+  }
+  .cartItem__details {
+    padding: 0.5rem;
+  }
+}
