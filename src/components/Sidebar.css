@@ -78,7 +78,7 @@
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(220, 20, 60, 0.15) !important;
 }
 
-@media (min-width: 550px) {
+@media (max-width: 550px) {
   .sidebar {
     transform: translateY(-100%);
   }
