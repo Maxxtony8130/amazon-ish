@@ -53,6 +53,7 @@
   overflow: hidden;
   background: #fafafa;
   box-shadow: 0 0.15rem 0.25rem rgba(26, 26, 44, 0.05);
+  white-space: nowrap;
 }
 .cartItem__buttons span {
   padding: 0.5rem;
@@ -68,9 +69,9 @@
 
 @media (max-width: 550px) {
   .cartItem__image img {
-    padding: 0.5rem;
+    padding: 0.75rem;
   }
   .cartItem__details {
-    padding: 0.5rem;
+    padding: 0.75rem 0;
   }
 }
