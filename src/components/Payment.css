@@ -145,9 +145,6 @@
     width: 100%;
     margin: 1rem 0 3rem 0;
   }
-  .payment__cardName {
-    font-size: 18px;
-  }
   .payment__shippingDetails {
     margin: 2rem 0;
     width: 100%;
