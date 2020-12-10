@@ -24,10 +24,11 @@ function Sidebar() {
   const history = useHistory();
   const [{ user, cart, bookmarks }] = useStateValue();
   const [sidebarActive, setSidebarActive] = useState(false);
+  const toggleSidebar = () => setSidebarActive((sidebarActive) => !sidebarActive);
 
   return (
     <div className={`sidebar ${sidebarActive ? 'active' : ''}`}>
-      <img src={amazonIcon} className="sidebar__icon" onClick={() => setSidebarActive((sidebarActive) => !sidebarActive)}/>
+      <img src={amazonIcon} className="sidebar__icon" onClick={toggleSidebar}/>
       <div className="sidebar__menu">
         <NavLink
           to="/"
@@ -36,6 +37,7 @@ function Sidebar() {
           activeClassName="active"
           data-tip="Home"
           data-for="sidebarTooltip"
+          onClick={toggleSidebar}
         >
           <HomeRoundedIcon
             className="sidebar__menuIcon"
@@ -48,6 +50,7 @@ function Sidebar() {
           activeClassName="active"
           data-tip="Cart"
           data-for="sidebarTooltip"
+          onClick={toggleSidebar}
         >
           <ShoppingCartRoundedIcon
             className="sidebar__menuIcon"
@@ -61,6 +64,7 @@ function Sidebar() {
           activeClassName="active"
           data-tip="Bookmarks"
           data-for="sidebarTooltip"
+          onClick={toggleSidebar}
         >
           <BookmarksRoundedIcon
             className="sidebar__menuIcon"
@@ -74,6 +78,7 @@ function Sidebar() {
           activeClassName="active"
           data-tip="Orders"
           data-for="sidebarTooltip"
+          onClick={toggleSidebar}
         >
           <WatchLaterRoundedIcon
             className="sidebar__menuIcon"
@@ -84,7 +89,7 @@ function Sidebar() {
       {user ? 
         <img
           src={user?.photoURL || defaultImage}
-          onClick={() => history.push("/profile")}
+          onClick={() => {history.push("/profile"); toggleSidebar();}}
           data-tip="My Account"
           data-for="sidebarTooltip"
           className="sidebar__avatar"
@@ -96,6 +101,7 @@ function Sidebar() {
           activeClassName="active"
           data-tip="Login / Register"
           data-for="sidebarTooltip"
+          onClick={toggleSidebar}
         >
           <AccountCircleRoundedIcon
             className="sidebar__menuIcon"
