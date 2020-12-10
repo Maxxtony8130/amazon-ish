@@ -182,6 +182,11 @@ function Payment() {
     setError(e.error ? e.error.message : null);
   };
 
+  const cardFontSize = () => {
+    const mediaQuery = window.matchMedia("(max-width: 700px)");
+    return mediaQuery.matches ? "18px" : "20px";
+  }
+
   return (
     <div className={`payment ${succeeded ? "payment__success" : ""}`}>
       <h4>Complete your Order, {user?.displayName.split(" ", 1)}!</h4>
@@ -214,7 +219,7 @@ function Payment() {
                   options={{
                     style: {
                       base: {
-                        fontSize: {() => window.matchMedia("(max-width: 700px)").matches ? "18px" : "20px"},
+                        fontSize: {cardFontSize},
                         fontWeight: "800",
                         fontFamily: "Nunito Sans, sans-serif",
                         iconColor: "#fff",
