@@ -52,7 +52,7 @@
   .cart__inner {
     flex-direction: column;
   }
-  .cart__items, .cart__empty {
+  .cart__items {
     flex: 0 0 100%;
     margin-bottom: 3rem;
   }
