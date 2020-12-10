@@ -25,3 +25,17 @@
   flex-flow: column nowrap;
   flex: 1;
 }
+
+@media (max-width: 550px) {
+  .orders {
+    padding: 3rem 1.5rem;
+  }
+  .orders__inner {
+    flex-flow: column nowrap;
+  }
+  .orders .payment__summary {
+    flex: 0 0 100%;
+    width: 100%;
+    margin: 0 0.75rem;
+  }
+}
