@@ -32,10 +32,12 @@
   }
   .orders__inner {
     flex-flow: column nowrap;
+    width: 100%;
+    margin: 0;
   }
   .orders .payment__summary {
     flex: 0 0 100%;
     width: 100%;
-    margin: 0 0.75rem;
+    margin: 0.75rem 0;
   }
 }

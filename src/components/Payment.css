@@ -137,6 +137,8 @@
     flex-flow: column nowrap;
   }
   .payment__method, .payment__summary {
-    flex: 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
   }
 }
