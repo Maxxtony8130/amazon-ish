@@ -58,6 +58,6 @@ input::placeholder {
     display: none;
   }
   .header__langDropDown {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
