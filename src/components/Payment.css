@@ -141,4 +141,13 @@
     width: 100%;
     max-width: 100%;
   }
+  .payment__card {
+    padding-bottom: calc(100% * 0.6);
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .payment__shippingDetails {
+    margin: 2rem 0;
+    width: 100%;
+  }
 }
