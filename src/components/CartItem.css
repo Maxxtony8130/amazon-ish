@@ -72,6 +72,6 @@
     padding: 0.75rem;
   }
   .cartItem__details {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0.75rem 0.75rem 0;
   }
 }
