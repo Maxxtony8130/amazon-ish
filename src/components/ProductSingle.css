@@ -99,4 +99,7 @@
   .productSingle__details {
     padding: 3rem 0;
   }
+  .productSingle__features {
+    margin: 1rem 0 1rem 2rem;
+  }
 }
