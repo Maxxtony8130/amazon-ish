@@ -86,7 +86,7 @@
     left: 0;
   }
   .sidebar__icon {
-    transform: translateY(100px);
+    transform: translateX(100px);
   }
   .sidebar.active .sidebar__icon {
     transform: translateY(0);
