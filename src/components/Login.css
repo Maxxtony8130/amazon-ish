@@ -183,3 +183,9 @@ input[type="checkbox"]:checked + label::after,
 input[type="radio"]:checked + label::after {
   transform: scale(0.6);
 }
+
+@media (max-width: 550px) {
+  .form {
+    margin: 0;
+  }
+}

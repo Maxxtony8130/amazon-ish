@@ -10,3 +10,9 @@
 .carousel .control-dots .dot {
   box-shadow: 0 0.15rem 0.25rem rgba(26, 26, 44, 0.5);
 }
+
+@media (max-width: 550px) {
+  .home__carousel {
+    margin: 1.5rem;
+  }
+}
