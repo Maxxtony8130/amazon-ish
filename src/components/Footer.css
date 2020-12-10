@@ -85,3 +85,25 @@
   top: auto;
   bottom: calc(100% + 0.5rem);
 }
+
+@media (max-width: 550px) {
+  .footer__inner {
+    padding: 0;
+  }
+  .footer__links {
+    padding: 1.5rem;
+    flex-flow: column nowrap;
+  }
+  .footer__row {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .footer__disclaimer {
+    padding: 1.5rem;
+  }
+  .footer__bottom {
+    padding: 1.5rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}

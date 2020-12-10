@@ -119,6 +119,6 @@
   }
   .product {
     width: calc(100% - 3rem);
-    margin: 1.5rem;
+    margin: 0.5rem 1.5rem;
   }
 }
