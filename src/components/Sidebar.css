@@ -80,20 +80,23 @@
 @media (max-width: 550px) {
   .sidebar {
     width: 80px;
-    transform: translateX(0);
-    z-index: 999;
+    transform: translateX(-80px);
     padding: 1.5rem 0;
     transition: all 0.2s;
   }
   .sidebar.active {
-    transform: translateX(-80px);
+    transform: translateX(0);
   }
   .sidebar__icon {
-    transform: translateX(0);
-    z-index: 999;
+    transform: translateX(80px);
     transition: all 0.2s;
+    width: 1.5rem;
+    padding: 1rem;
+    border-radius: 99px;
+    box-shadow: 0 0.25rem 0.5rem rgba(26, 26, 44, 0.1);
   }
   .sidebar.active .sidebar__icon {
-    transform: translateX(80px);
+    transform: translateX(0);
+    box-shadow: 0;
   }
 }
