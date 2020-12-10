@@ -188,4 +188,11 @@ input[type="radio"]:checked + label::after {
   .form {
     margin: 1.5rem;
   }
+  .form__element input,
+  select,
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    width: 100%;
+    max-width: 18rem;
+  }
 }

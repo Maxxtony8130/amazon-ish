@@ -58,7 +58,7 @@ input::placeholder {
     display: none;
   }
   .header__langDropDown {
-    display: none;
+    display: none !important;
   }
   .header__search {
     margin-right: 0;
