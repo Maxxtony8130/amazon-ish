@@ -214,7 +214,7 @@ function Payment() {
                   options={{
                     style: {
                       base: {
-                        fontSize: "20px",
+                        fontSize: {window.matchMedia("(max-width: 700px)").matches ? "18px" : "20px"},
                         fontWeight: "800",
                         fontFamily: "Nunito Sans, sans-serif",
                         iconColor: "#fff",
