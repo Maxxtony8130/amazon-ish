@@ -50,7 +50,7 @@
     padding: 3rem 1.5rem;
   }
   .cart__inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .cart-items {
     flex: 0 0 100%;
@@ -58,6 +58,6 @@
   .cart__checkout {
     flex: 0 0 100%;
     margin-left: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 }

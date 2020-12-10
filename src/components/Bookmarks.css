@@ -12,4 +12,7 @@
   .bookmark__inner {
     padding: 1.5rem;
   }
+  bookmarks > h4 {
+    margin: 3rem 1.5rem;
+  }
 }
