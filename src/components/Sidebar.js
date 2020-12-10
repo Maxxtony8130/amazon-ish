@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Sidebar.css";
 import amazonIcon from "../assets/icon.svg";
 import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
@@ -23,10 +23,11 @@ const iconStyle = (fontsize) => {
 function Sidebar() {
   const history = useHistory();
   const [{ user, cart, bookmarks }] = useStateValue();
+  const [sidebarActive, setSidebarActive] = useState(false);
 
   return (
-    <div className="sidebar">
-      <img src={amazonIcon} className="sidebar__icon" />
+    <div className={`sidebar ${sidebarActive ? 'active' : ''}`}>
+      <img src={amazonIcon} className="sidebar__icon" onClick={() => setSidebarActive((sidebarActive) => !sidebarActive)}/>
       <div className="sidebar__menu">
         <NavLink
           to="/"

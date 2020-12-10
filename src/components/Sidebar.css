@@ -82,4 +82,13 @@
   .sidebar {
     transform: translateY(-100%);
   }
+  .sidebar.active {
+    transform: translateY(0);
+  }
+  .sidebar__icon {
+    transform: translateY(200%);
+  }
+  .sidebar.active .sidebar__icon {
+    transform: translateY(0);
+  }
 }
