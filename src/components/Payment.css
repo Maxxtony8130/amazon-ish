@@ -97,7 +97,6 @@
   color: #fff;
   line-height: 1;
   font-size: 20px;
-  position: absolute;
   width: calc(100% - 4rem);
   position: absolute;
   top: 2rem;
@@ -149,5 +148,15 @@
   .payment__shippingDetails {
     margin: 2rem 0;
     width: 100%;
+  }
+  .payment__card > .StripeElement {
+    width: calc(100% - 2rem);
+    bottom: 1rem;
+    left: 1rem;
+  }
+  .payment__cardName {
+    width: calc(100% - 2rem);
+    top: 1rem;
+    left: 1rem;
   }
 }
