@@ -84,3 +84,19 @@
   width: calc(100% + 2rem);
   margin-left: -1rem;
 }
+
+@media (max-width: 550px) {
+  .productSingle {
+    padding: 3rem 1.5rem;
+  }
+  .productSingle__inner {
+    flex-flow: column;
+  }
+  .productSingle__image {
+    flex: 0 0 100%;
+    padding-bottom: calc(100% * 1.33);
+  }
+  .productSingle__details {
+    padding: 3rem 0;
+  }
+}
