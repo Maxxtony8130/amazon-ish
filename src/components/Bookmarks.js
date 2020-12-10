@@ -18,7 +18,7 @@ function Bookmarks() {
           ))}
         </div>
       ) : (
-        <div style={{ padding: "3rem" }} className="cart__inner">
+        <div className="cart__inner bookmark__inner">
           <div className="cart__items">
             <img src={emptyBookmarks} className="cart__empty" />
           </div>
