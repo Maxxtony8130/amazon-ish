@@ -80,13 +80,13 @@
 
 @media (max-width: 550px) {
   .sidebar {
-    transform: translateY(-100%);
+    left: -100px;
   }
   .sidebar.active {
-    transform: translateY(0);
+    left: 0;
   }
   .sidebar__icon {
-    transform: translateY(200%);
+    transform: translateY(100px);
   }
   .sidebar.active .sidebar__icon {
     transform: translateY(0);
