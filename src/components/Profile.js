@@ -19,12 +19,11 @@ function Profile() {
           .doc(user.uid)
           .get()
           .then((response) => {
-            setUserDetails(response.data());
-            if (loadingBar) {
-              loadingBar.current.complete();
+            if (response.exists) {
+              setUserDetails(response.data());
+            } else {
+              history.replace("/welcome?next=profile");
             }
-          }).catch(() => {
-            history.replace("/welcome?next=profile");
             if (loadingBar) {
               loadingBar.current.complete();
             }
