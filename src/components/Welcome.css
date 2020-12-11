@@ -40,3 +40,22 @@
 .welcome .form h5 {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 550px) {
+  .welcome {
+    padding: 1.5rem;
+  }
+  .welcome__inner {
+    flex-direction: column;
+  }
+  .welcome .form__split {
+    padding: 1.5rem;
+  }
+  .welcome .form {
+    padding: 0;
+  }
+  .welcome .form + .form {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+}
