@@ -36,3 +36,18 @@
 .profile__inner p span:nth-child(2) {
   flex: 80%;
 }
+
+@media (max-width: 550px) {
+  .profile {
+    padding: 1.5rem;
+ }
+  .profile__inner p {
+    flex-direction: column;
+  }
+  .profile__inner p span:first-child, .profile__inner p span:nth-child(2) {
+    flex: auto;
+  }
+  .profile__inner {
+    padding: 1.5rem;
+  }
+}
