@@ -58,4 +58,13 @@
     margin-left: 0;
     margin-bottom: 1.5rem;
   }
+  .welcome__header {
+    flex-direction: column;
+  }
+  .welcome__avatar {
+    margin-right: 0;
+  }
+  .welcome__header span {
+    margin-top: 1.5rem;
+  }
 }
