@@ -140,6 +140,9 @@
     width: 100%;
     max-width: 100%;
   }
+  .payment__summary {
+    padding: 1.5rem;
+  }
   .payment__card {
     padding-bottom: calc(100% * 0.6);
     width: 100%;
@@ -148,6 +151,7 @@
   .payment__shippingDetails {
     margin: 2rem 0;
     width: 100%;
+    padding: 1.5rem;
   }
   .payment__card > .StripeElement {
     width: calc(100% - 2rem);
