@@ -36,7 +36,7 @@ function Signup() {
           auth.currentUser
             .updateProfile({
               displayName: name,
-              photoURL: `https://api.adorable.io/avatars/96/${name}`,
+              photoURL: `https://i.pravatar.cc/150?u=${email}`,
             })
             .then(() => {
               setSuccess(true);
