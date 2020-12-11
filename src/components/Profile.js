@@ -82,7 +82,7 @@ function Profile() {
           </p>
           <p style={{ marginBottom: "1rem" }}>
             <span>Date of Birth</span>
-            <span>{userDetails.email}</span>
+            <span>{userDetails.dob}</span>
           </p>
           <p>
             <span>Address</span>
