@@ -54,7 +54,7 @@
   }
   .welcome .form + .form {
     margin-left: 0;
-    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
   }
   .welcome__header {
     flex-direction: column;
