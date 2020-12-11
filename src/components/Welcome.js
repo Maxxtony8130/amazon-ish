@@ -46,12 +46,13 @@ function Welcome() {
       .then(() => {
         setLoading(false);
         loadingBar.current.complete();
-        if (!query.get("next")) {
+        const nextUrl = query.get("next");
+        if (!nextUrl) {
           history.replace("/");
-        } else if (query.get("next") === "payment") {
+        } else if (nextUrl === "payment") {
           history.replace("/payment?from=signup");
         } else {
-          history.replace(`/${query.get("next")}`);
+          history.replace(`/${nextUrl}`);
         }
       });
   };

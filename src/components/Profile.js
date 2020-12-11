@@ -23,6 +23,11 @@ function Profile() {
             if (loadingBar) {
               loadingBar.current.complete();
             }
+          }).catch(() => {
+            history.replace("/welcome?next=profile");
+            if (loadingBar) {
+              loadingBar.current.complete();
+            }
           });
         unsubscribe();
       } else {
