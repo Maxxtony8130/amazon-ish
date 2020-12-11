@@ -45,10 +45,8 @@
   .welcome {
     padding: 1.5rem;
   }
-  .welcome__inner {
-    flex-direction: column;
-  }
   .welcome .form__split {
+    flex-direction: column;
     padding: 1.5rem;
   }
   .welcome .form {
@@ -60,6 +58,7 @@
   }
   .welcome__header {
     flex-direction: column;
+    align-items: flex-start;
   }
   .welcome__avatar {
     margin-right: 0;
