@@ -59,12 +59,6 @@
     flex: 0 0 100%;
     margin-bottom: 3rem;
   }
-  .cart .cart__inner {
-    flex-direction: column-reverse;
-  }
-  .cart .cart__items {
-    margin: 3rem 0;
-  }
   .cart__checkout {
     flex: 0 0 100%;
     margin-left: 0;
