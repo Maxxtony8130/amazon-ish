@@ -30,7 +30,7 @@ function Login() {
           console.log(res);
           setSuccess(true);
           setFormError(
-            "Your email is verified successfully. You may now continue."
+            "Your email is verified successfully. Login again to complete the verification process."
           );
           if (auth.currentUser) {
             setTimeout(() => history.replace("/"), 3000);
